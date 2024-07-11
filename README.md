@@ -18,8 +18,13 @@ The transport also allows for processing these *queued* messages.
     ```bash
     composer require --dev zenstruck/messenger-test
     ```
+2. Add the bundle in `config/bundles.php`:
 
-2. Update `config/packages/messenger.yaml` and override your transport(s)
+    ```php
+    Zenstruck\Messenger\Test\ZenstruckMessengerTestBundle::class => ['test' => true],
+    ```
+
+3. Update `config/packages/messenger.yaml` and override your transport(s)
 in your `test` environment with `test://`:
 
     ```yaml
