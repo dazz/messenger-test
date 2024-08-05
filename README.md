@@ -18,7 +18,7 @@ The transport also allows for processing these *queued* messages.
     ```bash
     composer require --dev zenstruck/messenger-test
     ```
-2. Add the bundle in `config/bundles.php`:
+2. If not added automatically by Symfony Flex, add the bundle in `config/bundles.php`:
 
     ```php
     Zenstruck\Messenger\Test\ZenstruckMessengerTestBundle::class => ['test' => true],
